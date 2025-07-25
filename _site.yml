@@ -1,0 +1,64 @@
+name: " "
+output_dir: "docs"
+navbar:
+  title: " "
+  left:
+    - text: "PyE"
+      icon: fa-home
+      href: index.html
+    - text: "Módulo 0"
+      menu:
+        - text: "Módulo 0"
+          href: Modulo0.html
+        - text: "Recurso 0.1"
+          href: sumatoria.html  
+        - text: "Recurso 0.2"
+          href: productoria.html  
+
+    - text: "Módulo 1"
+      menu:
+        - text: "Módulo 1"
+          href: Modulo1.html
+        - text: "---------"          
+        - text: "Guía 1.1"
+          href: guia11.html  
+        - text: "---------"  
+        - text: "Recursos 1.1"
+          href: recurso11.html  
+        - text: "---------"            
+        - text: "Introducción a R"
+          href: introduccionR.html
+        - text: "Código 1.1"
+          href: codigo11.html
+ 
+    - text: "Módulo 2"
+      menu:
+        - text: "Módulo 2"
+          href: Modulo2.html
+        - text: "---------"  
+
+    - text: "Módulo 3"
+      menu:
+        - text: "Módulo 3"
+          href: Modulo3.html
+        - text: "---------"
+
+    - text: "Módulo 4"
+      menu:
+        - text: "Módulo 4"
+          href: Modulo4.html
+        - text: "---------"
+
+    - text: "Módulo 5"
+      menu:
+        - text: "Módulo 5"
+          href: Modulo5.html
+
+    - text: "Proyecto"
+      menu:
+        - text: "Guía proyecto"
+          href: recurso000.html   
+output:
+  html_document:
+    theme: flatly
+    css: style.css

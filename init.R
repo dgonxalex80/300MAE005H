@@ -1,0 +1,24 @@
+# colores
+c00= "#DA4453"
+c01= "#ED5565"
+
+c10= "#F9573F"
+c11 ="#FC6E54"
+
+c20= "#F6BB42"
+c21= "#FFCE54"
+
+c30= "#8CC152"
+c31= "#A0D468"
+
+c40= "#37BC9B"
+c41= "#48CFAD"
+
+c50= "#3BAFDA"
+c51= "#4FC1E9"
+
+c60 ="#4A89DC"
+c61 ="#5D9CEC"
+
+c7= "#2C5697" # AZUL INSTITUCIONAL
+c8= "#F7F7F7" # FONDO GRIS CLARO WEB

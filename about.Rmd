@@ -1,0 +1,92 @@
+---
+title: "**Sobre el grupo**"
+subtitle: " "
+author: "dgonzalez"
+date: ""
+output:
+  html_document:
+    toc: no
+    toc_depth: 2
+    toc_float: yes
+    code_folding: hide
+    theme: flatly
+    css: style.css
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,comment = NA)
+
+# colores
+source("init.R")
+
+# Crear el data.frame
+# Crear el data.frame
+data <- data.frame(
+  Nombre = c("ARISMENDI GIGLIOLI", "CHAVES RAYMOND,MARIA", "CUERVO PEÑA,SAMUEL", "DAVILA MUELAS,MIGUEL", "ESPINOSA ARIAS,JUAN", "HENAO RINCON,TOMAS", "HIDALGO JIMENEZ", "LEMA FRANCO,SALOME", "MESA VELASQUEZ,JOSE", "OTALVARO GARCIA", "PADILLA ROSERO,MIGUEL", "RAMIREZ RIVAS,JUAN DAVID", "RUBIO URREGO,ESTEVAN", "SANCHEZ MORILLO,JUAN", "SILVA HURTADO,JOSE", "SIMONS GONZALEZ", "SOTO BEDOYA,SAMUEL"
+  ),
+  Emplid = c(8984885, 8986734, 9024127, 8972120, 9017678, 8985881, 8988137, 9016888, 9023638, 8989361, 8988878, 9010192, 9012859, 9023891, 9012445, 9012852, 8972199 ),
+  Carrera = c("Ingeniería de Sistemas", "Biología", "Ingeniería de Sistemas", "Ingeniería Mecánica", "Ingeniería de Sistemas", "Ingeniería Biomédica", "Biología", "Biología", "Ingeniería de Sistemas", "Biología", "Ingeniería de Sistemas", "Biología", "Biología", "Ingeniería de Sistemas", "Biología", "Biología", "Ingeniería Civil"),
+  Matriculada = rep(1, 17),
+  Cancelada = rep(0, 17),
+  Perdida = rep(0, 17),
+  Promedio = c(3.89, 4.10, 4.23, 3.70,3.98, 4.16, 4.68, 4.29, 3.97, 4.28, 4.11, 3.80, 4.09, 4.08, 3.96, 4.01, 3.32)
+)
+
+
+# Mostrar el data.frame
+# print(data)
+
+# Instalar los paquetes necesarios si no están ya instalados
+if (!require(ggplot2)) install.packages("ggplot2")
+if (!require(dplyr)) install.packages("dplyr")
+if (!require(paletteer)) install.packages("paletteer")
+library(paletteer)
+library(ggplot2)
+library(dplyr)
+
+```
+
+
+<br/><br/>
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Crear una paleta de colores pastel
+# pastel_colors <- c("#FDBFB3", "#FFDDC1", "#FFC8A2", "#FFD8BE", "#FFCB9A", "#FFC3A0", "#FF9AA2", "#FFDAC1")
+# pastel_colors <-c("#d2fbff", "#b7dbe6", "#9cbcce", "#819eb6", "#68819e", "#4e6587", "#354b71", "#19325b")
+
+pastel_colors <-  paletteer_c("ggthemes::Orange-Blue-White Diverging", 8)
+
+# Diagrama circular para la variable Carrera
+carrera_counts <- data %>% 
+  group_by(Carrera) %>% 
+  summarise(count = n())
+
+ggplot(carrera_counts, aes(x = "", y = count, fill = Carrera)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar(theta = "y") +
+  theme_void() +
+  scale_fill_manual(values = pastel_colors) +
+  labs(title = "Distribución de Carrera")
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=2}
+# Diagrama de cajas para la variable Promedio
+# Diagrama de cajas horizontal y azul
+ggplot(data, aes(x = "", y = Promedio, fill = "Promedio")) +
+  geom_boxplot(color = "black", fill = c11) +  # Color azul
+  coord_flip() +  # Rotar horizontalmente
+  labs(title = "Diagrama de Cajas para la Variable Promedio",
+       x = "", y = "Promedio") +
+  theme_minimal()
+
+
+
+```
+
+
+```{r}
+non =data.frame(data$Nombre)
+
+non
+```
+
