@@ -1,8 +1,7 @@
 ---
-title: " "
+title: "Probabilidad y Estadística"
 subtitle: "dgonzalez"
-author: "dgonzalez"
-date: ""
+date: "2025-2"
 output:
   html_document:
     toc: no
@@ -26,14 +25,12 @@ source("init.R")
 
 <br/><br/>
 
-##### **dgonzalez**
-
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
- knitr::include_graphics("img/bannerG.png")
+ #knitr::include_graphics("img/bannerG.png")
 ```
 
 
-<br/><br/><br/>
+<br/>
 
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
@@ -43,7 +40,7 @@ source("init.R")
 
 
 
-## **Metodología**
+# **Metodología**
 
 <div class="box2"> 
 ```{r, echo=FALSE, out.width="110%", fig.align = "center"}
@@ -54,7 +51,7 @@ knitr::include_graphics("img/metodologia.png")
 
 <br/><br/>
 
-## **Calendario 2025-2**
+# **Calendario 2025-2**
 <div class="box2">
 
 
@@ -84,7 +81,7 @@ knitr::include_graphics("img/calendario2025-2.png")
 
 <br/><br/>
 
-## **Atención a Estudiantes**
+# **Atención a Estudiantes**
 <div class="box2">
 
 
@@ -98,7 +95,7 @@ knitr::include_graphics("img/calendario2025-2.png")
 <br/><br/>
 
 
-## **Información supletorios**
+# **Información supletorios**
 <div class="box2">
 
 
@@ -114,3 +111,7 @@ knitr::include_graphics("img/calendario2025-2.png")
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
 # knitr::include_graphics("img/calendario2023-1bre.png")
 ```
+
+
+
+

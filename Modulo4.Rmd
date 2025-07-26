@@ -1,6 +1,6 @@
 ---
-title: <span style='color:#2C5697'> </span>
-subtitle: <span style='color:#2C5697'>**Probabilidad y Estadística**</span> 
+title: " "
+subtitle: " "
 author: "dgonzalez "
 output:
   html_document:
@@ -20,7 +20,11 @@ source("init.R")
 
 ```
  
-![](img/banner04.png) 
+<br/><br/>
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/banner04.png")
+```
 
 <br/><br/>
 

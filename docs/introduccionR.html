@@ -12,7 +12,7 @@
 <meta name="author" content="dgonzalez" />
 
 
-<title> </title>
+<title>introduccionR.knit</title>
 
 <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -361,7 +361,7 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="proyecto.html">Guía proyecto</a>
+      <a href="recurso000.html">Guía proyecto</a>
     </li>
   </ul>
 </li>
@@ -385,16 +385,15 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><span style="color:#235784"> </span></h1>
-<h3 class="subtitle"><span style="color:#235784"> </span></h3>
-<h4 class="author">dgonzalez</h4>
 
 </div>
 
 
-<p><img src="img/banner01.png" /></p>
+<p><br/><br/></p>
+<p><img src="img/banner01.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/></p>
 <div id="introducción-a" class="section level1">
-<h1><strong>INTRODUCCIÓN A</strong>
+<h1><strong>Introducción a</strong>
 <img src="img/logoR.png" width="80"></h1>
 <p><br/><br/></p>
 </div>
@@ -415,7 +414,7 @@ las principales caractarísticas estan:</p>
 <li><p>Mas de 7000 paquetes</p></li>
 </ul>
 <p><br/><br/></p>
-<p><img src="img/Rt.png" width="500"></p>
+<p><img src="img/Rt.png" width="50%" style="display: block; margin: auto;" /></p>
 <p><br/> En el siguiente enlace se pueden obtener los archivos para su
 instalación : <a href="https://www.r-project.org/"
 class="uri">https://www.r-project.org/</a></p>
@@ -426,7 +425,7 @@ que facilitan el uso R a los usuarios</p>
 <p><img src="img/logoRStudio.png" width="200" class="center"></p>
 <p>Esta interfaz esta conformada por varias ventana como se muestra en
 la siguiente imagen</p>
-<p><img src="img/VRStudio.png" width="800"></p>
+<p><img src="img/VRStudio.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol style="list-style-type: decimal">
 <li>Fuente (Source) : Ventana donde se trabajan los script con código
 que se guardan para posterior utilización</li>
@@ -452,8 +451,9 @@ dependiendo el sistema operativo :</p>
 download</a></p></li>
 </ul>
 <p><br/><br/></p>
-<div id="bilbiografia-recomendada" class="section level3">
-<h3><strong>Bilbiografia recomendada</strong>:</h3>
+</div>
+<div id="bilbiografia-recomendada" class="section level1">
+<h1><strong>Bilbiografia recomendada</strong>:</h1>
 <ul>
 <li><p><a
 href="https://cran.r-project.org/doc/contrib/rdebuts_es.pdf"><strong>R
@@ -468,7 +468,6 @@ de R</strong> - Videos -Rafa Gonzalez Gouveia</a></p></li>
 <p><br/> A continuación se relacionan algunas ayudas para la iniciación
 del lenguaje</p>
 <p><br/><br/></p>
-</div>
 </div>
 <div id="tipos-de-datos-en-r" class="section level1">
 <h1><strong>Tipos de datos en R</strong></h1>
@@ -582,7 +581,7 @@ fx(100) # funcion evaluada en x=100</code></pre>
 construcción de un gráfico</p>
 <pre class="r"><code>x=seq(from=2,to=10, by=0.01)  # genera secuencia de numeros entre 2 y 10 con paso 0.01
 plot(x, fx(x), type=&quot;l&quot;, col=c10) # genera grafica</code></pre>
-<p><img src="introduccionR_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="introduccionR_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>El siguiente ejemplo construye una función para la realización de un
 gráfico. En este caso los valores de entrada estan conformados por un
 vector de datos y un color</p>
@@ -596,15 +595,18 @@ grafica=function(x,color){
 
 z=table(y) # generacion de tabla de datos
 grafica(z,c10)  # evalua la funcion en los datos z y colo rojo</code></pre>
-<p><img src="introduccionR_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="introduccionR_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <pre class="r"><code>w=round(prop.table(z)*100,2)  # genera datos y constuye tabla en porcentaje
 grafica(w,c60)  # evalua la funcion con w y color azul</code></pre>
-<p><img src="introduccionR_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="introduccionR_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p><br/><br/></p>
 </div>
 <div id="ts" class="section level2">
 <h2><strong>ts</strong></h2>
 <p>Objeto para series de tiempo</p>
+<p>Tasa de desempleo Colombia</p>
+<pre><code>## [1] &quot;COLLRHUTTTTSTSAM&quot;</code></pre>
+<p><img src="introduccionR_files/figure-html/unnamed-chunk-15-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p><br/><br/><br/></p>
 </div>
 </div>
@@ -716,17 +718,17 @@ inferior derecha de RStudio</li>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4KY2xFm05JA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <p><br/><br/></p>
-<div id="paquetes-más-utilizados" class="section level3">
-<h3><strong>Paquetes más utilizados</strong></h3>
-<div id="análisis-descriptivo" class="section level4">
-<h4><strong>Análisis descriptivo</strong></h4>
+<div id="paquetes-más-utilizados" class="section level2">
+<h2><strong>Paquetes más utilizados</strong></h2>
+<div id="análisis-descriptivo" class="section level3">
+<h3><strong>Análisis descriptivo</strong></h3>
 <ul>
-<li><p>agricolate</p></li>
-<li><p>spych</p></li>
-<li><p>summarytools</p></li>
-<li><p>ggplot2</p></li>
-<li><p>flexdashboard</p></li>
-<li><p>Rmarkdown</p></li>
+<li>agricolate</li>
+<li>spych</li>
+<li>summarytools</li>
+<li>ggplot2</li>
+<li>flexdashboard</li>
+<li>Rmarkdown</li>
 </ul>
 <p><a href="https://gallery.shinyapps.io/087-crandash/">Paquetes
 RStudio</a></p>

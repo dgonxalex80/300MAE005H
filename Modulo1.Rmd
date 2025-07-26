@@ -1,7 +1,7 @@
 ---
-title: <span style="color:#2C5697"> </span>
-subtitle: <span style="color:#2C5697">**Probabilidad y Estadística**</span>
-author: "dgonzalez "
+title: " " 
+subtitle: " " 
+author: "dgonzalez"
 output:
   html_document:
     toc: no
@@ -18,8 +18,11 @@ knitr::opts_chunk$set(echo = TRUE)
 # colores
 source("init.R")
 ```
+<br/><br/>
 
-![](img/banner01.png) 
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/banner01.png")
+```
 
 <br/><br/>
 

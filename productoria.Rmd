@@ -1,7 +1,7 @@
 ---
-title: <span style="color:#235784"> </span>  
+title: " "   
 author: "dgonzalez "
-subtitle: <span style="color:#235784"> </span> 
+subtitle: " "  
 output:
   html_document:
     toc: no
@@ -17,9 +17,16 @@ knitr::opts_chunk$set(echo = TRUE,comment = NA)
 source("init.R")
 ```
 
-![](img/banner00.png) 
 
-# **PRODUCTORIA**
+<br/><br/>
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+ knitr::include_graphics("img/banner00.png")
+``` 
+
+<br/>
+
+# **Productoria**
 
 <br/><br/>
 
@@ -32,7 +39,8 @@ Este operador será utilizado para desarrollar el método de estimación de Máx
 
 <br/><br/><br/> 
 
-<div class="box2">
+<div class="box1">
+
 ## **Definición**
 
 Se define como:

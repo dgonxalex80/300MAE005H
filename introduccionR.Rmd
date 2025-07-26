@@ -1,7 +1,7 @@
 ---
-title: <span style="color:#235784"> </span>  
+title: " "  
 author: "dgonzalez "
-subtitle: <span style="color:#235784"> </span> 
+subtitle: " " 
 output:
   html_document:
     toc: no
@@ -19,12 +19,16 @@ knitr::opts_chunk$set(echo = TRUE)
 source("init.R")
 ```
 
+<br/><br/>
 
-![](img/banner01.png) 
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+ knitr::include_graphics("img/banner01.png")
+```
 
 
+<br/><br/>
 
-# **INTRODUCCIÓN A** <img src="img/logoR.png" width="80">
+# **Introducción a** <img src="img/logoR.png" width="80">
 
 <br/><br/>
 
@@ -50,7 +54,13 @@ Es un lenguaje para la computación  estadística, utilizado para el procesamien
    
 <br/><br/>
 
-<img src="img/Rt.png" width="500">
+
+
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+ knitr::include_graphics("img/Rt.png")
+```
+
+
 
 <br/>
 En el siguiente enlace se pueden obtener los archivos para su instalación : https://www.r-project.org/
@@ -63,7 +73,14 @@ Podemos usar este lenguaje utilizando una terminal o mediante la IDE **RStudio**
 
 Esta interfaz esta conformada por varias ventana como se muestra en la siguiente imagen
 
-<img src="img/VRStudio.png" width="800">
+
+
+
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+ knitr::include_graphics("img/VRStudio.png")
+```
+
 
 1. Fuente (Source) : Ventana donde se trabajan los script  con código que se guardan para posterior utilización
 2. Consola (Console) : Ventana donde se pueden escribir comandos de manera directa
@@ -81,9 +98,10 @@ En los siguientes enlaces se pueden descargar los programas, dependiendo el sist
 
 + [RStudio download](https://rstudio.com/products/rstudio/download/)
 
+
 <br/><br/>
 
-### **Bilbiografia recomendada**:
+# **Bilbiografia recomendada**:
 
 + [**R para principiantes**](https://cran.r-project.org/doc/contrib/rdebuts_es.pdf)
 
@@ -230,6 +248,34 @@ grafica(w,c60)  # evalua la funcion con w y color azul
 
 Objeto para series de tiempo
 
+
+
+Tasa de desempleo Colombia
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
+# Instalar y cargar paquetes necesarios
+if (!require("quantmod")) install.packages("quantmod")
+library(quantmod)
+
+# Descargar datos de desempleo mensual de Colombia (serie COLLRHUTTTTSTSAM)
+getSymbols("COLLRHUTTTTSTSAM", src = "FRED")
+
+# Convertir a serie de tiempo y revisar últimos datos
+desempleo_col <- COLLRHUTTTTSTSAM
+
+# Graficar la serie completa
+plot(desempleo_col,
+     main = "",
+     ylab = "Desempleo (%)",
+     xlab = "Fecha",
+     col = "darkblue",
+     lwd = 2)
+
+# Añadir líneas de cuadrícula
+grid()
+
+```
+
+
 <br/><br/><br/>
 
 #  **Operadores en R**
@@ -273,16 +319,14 @@ install.packages("ggplot2")
 
 <br/><br/>
 
-### **Paquetes más utilizados** 
+## **Paquetes más utilizados** 
 
-#### **Análisis descriptivo**
+### **Análisis descriptivo**
 
 + agricolate
 + spych
 + summarytools
 + ggplot2
-
-
 + flexdashboard
 + Rmarkdown
 
