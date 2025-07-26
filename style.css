@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Shadows+Into+Light&display=swap');
+
+
 /* Estilo general */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Andika', sans-serif;
   background-color: #f7f7f7;
   color: #333333;
 }
