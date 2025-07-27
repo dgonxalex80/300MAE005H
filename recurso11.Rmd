@@ -776,9 +776,11 @@ Continuaremos con una parte importante de esta metodología que está relacionad
 
 <br/><br/><br/>
 
-# **Base de datos**
 
 
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+ knitr::include_graphics("img/dataset.png")
+```
 
 ```{r, echo=FALSE, out.width="50%", fig.align = "center"}
  knitr::include_graphics("img/basesdatos.png")
