@@ -97,7 +97,7 @@ Una forma de abordar el curso de Probabilidad y Estadística e mediante la metod
 
 
 ```{r, echo=FALSE, out.width="80%", fig.align = "center"}
- knitr::include_graphics("img/metodologia3.png")
+ knitr::include_graphics("img/metodologia4.png")
 ```
 
 <br/><br/><br/>
@@ -248,7 +248,7 @@ Las variables se miden en diferentes escalas, dependiendo del tipo de valor que 
 
 <br/>
 
-```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+```{r, echo=FALSE, out.width="60%", fig.align = "center"}
  knitr::include_graphics("img/escalas.png")
 ```
 

@@ -58,6 +58,8 @@ navbar:
       menu:
         - text: "Guía proyecto"
           href: recurso000.html   
+        - text: "Quienes somos"
+          href: about.html
 output:
   html_document:
     theme: flatly

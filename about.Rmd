@@ -21,7 +21,23 @@ source("init.R")
 # Crear el data.frame
 # Crear el data.frame
 data <- data.frame(
-  Nombre = c("ARISMENDI GIGLIOLI", "CHAVES RAYMOND,MARIA", "CUERVO PEÑA,SAMUEL", "DAVILA MUELAS,MIGUEL", "ESPINOSA ARIAS,JUAN", "HENAO RINCON,TOMAS", "HIDALGO JIMENEZ", "LEMA FRANCO,SALOME", "MESA VELASQUEZ,JOSE", "OTALVARO GARCIA", "PADILLA ROSERO,MIGUEL", "RAMIREZ RIVAS,JUAN DAVID", "RUBIO URREGO,ESTEVAN", "SANCHEZ MORILLO,JUAN", "SILVA HURTADO,JOSE", "SIMONS GONZALEZ", "SOTO BEDOYA,SAMUEL"
+  Nombre = c("ARISMENDI GIGLIOLI", 
+             "CHAVES RAYMOND,MARIA", 
+             "CUERVO PEÑA,SAMUEL", 
+             "DAVILA MUELAS,MIGUEL", 
+             "ESPINOSA ARIAS,JUAN CAMILO", 
+             "HENAO RINCON,TOMAS", 
+             "HIDALGO JIMENEZ", 
+             "LEMA FRANCO,SALOME", 
+             "MESA VELASQUEZ,JOSE DANIEL", 
+             "OTALVARO GARCIA", 
+             "PADILLA ROSERO,MIGUEL", 
+             "RAMIREZ RIVAS,JUAN DAVID", 
+             "RUBIO URREGO,ESTEVAN", 
+             "SANCHEZ MORILLO,JUAN FELIPE", 
+             "SILVA HURTADO,JOSE", 
+             "SIMONS GONZALEZ", 
+             "SOTO BEDOYA,SAMUEL"
   ),
   Emplid = c(8984885, 8986734, 9024127, 8972120, 9017678, 8985881, 8988137, 9016888, 9023638, 8989361, 8988878, 9010192, 9012859, 9023891, 9012445, 9012852, 8972199 ),
   Carrera = c("Ingeniería de Sistemas", "Biología", "Ingeniería de Sistemas", "Ingeniería Mecánica", "Ingeniería de Sistemas", "Ingeniería Biomédica", "Biología", "Biología", "Ingeniería de Sistemas", "Biología", "Ingeniería de Sistemas", "Biología", "Biología", "Ingeniería de Sistemas", "Biología", "Biología", "Ingeniería Civil"),
@@ -52,8 +68,16 @@ library(dplyr)
 # Crear una paleta de colores pastel
 # pastel_colors <- c("#FDBFB3", "#FFDDC1", "#FFC8A2", "#FFD8BE", "#FFCB9A", "#FFC3A0", "#FF9AA2", "#FFDAC1")
 # pastel_colors <-c("#d2fbff", "#b7dbe6", "#9cbcce", "#819eb6", "#68819e", "#4e6587", "#354b71", "#19325b")
+# pastel_colors <-  paletteer_c("ggthemes::Orange-Blue-White Diverging", 8)
 
-pastel_colors <-  paletteer_c("ggthemes::Orange-Blue-White Diverging", 8)
+pastel_colors <- paletteer_c("ggthemes::Orange-Blue-White Diverging", 8, -1)
+#pastel_colors <- c("#bef7ff", "#a0dcff", "#91cfff", "#82c2ff", "#72b4ff", "#63a7ff", "#5499ff", "#458cff")
+# Diverging paletas similares a "Orange-Blue-White Diverging"
+
+
+
+
+
 
 # Diagrama circular para la variable Carrera
 carrera_counts <- data %>% 
@@ -73,7 +97,7 @@ ggplot(carrera_counts, aes(x = "", y = count, fill = Carrera)) +
 # Diagrama de cajas para la variable Promedio
 # Diagrama de cajas horizontal y azul
 ggplot(data, aes(x = "", y = Promedio, fill = "Promedio")) +
-  geom_boxplot(color = "black", fill = c11) +  # Color azul
+  geom_boxplot(color = "black", fill = "#2C5697") +  # Color azul
   coord_flip() +  # Rotar horizontalmente
   labs(title = "Diagrama de Cajas para la Variable Promedio",
        x = "", y = "Promedio") +
@@ -82,6 +106,13 @@ ggplot(data, aes(x = "", y = Promedio, fill = "Promedio")) +
 
 
 ```
+
+
+```{r, message=FALSE, warning=FALSE, error=FALSE}
+summary(data$Promedio)
+sd(data$Promedio)
+```
+
 
 
 ```{r}
