@@ -23,7 +23,6 @@ source("init.R")
 
 ```
 
-<br/><br/>
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
  #knitr::include_graphics("img/bannerG.png")
@@ -33,77 +32,73 @@ source("init.R")
 <br/>
 
 
-```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+```{r, echo=FALSE, out.width="120%", fig.align = "center"}
  knitr::include_graphics("img/modulos.png")
 ```
-<br/><br/>
+<br/>
 
 
 
 # **Metodología**
 
-<div class="box2"> 
+<br/><br/>
+
+
 ```{r, echo=FALSE, out.width="110%", fig.align = "center"}
 knitr::include_graphics("img/metodologia.png")
 ```
 
-</div>
-
 <br/><br/>
 
 # **Calendario 2025-2**
-<div class="box2">
-
 
 <br/><br/>
 
 
-```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
 knitr::include_graphics("img/calendario2025-2.png")
 ```
 
-</div>
-
 
 
 <br/><br/>
 
-<div class="box2">
 
-### **Profesor** : Daniel Enrique González Gómez 
+### **Profesor** : 
+
+* **Daniel Enrique González Gómez** 
 
 * correo : dgonzalez@javerianacali.edu.co
 
 
 ### **Monitor** : 
 
-</div>
+* **Julián Naranjo**
+
 
 <br/><br/>
 
 # **Atención a Estudiantes**
-<div class="box2">
-
 
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
 # knitr::include_graphics("img/atencion2.png")
 ```
 
-</div>
+
 
 <br/><br/>
 
 
 # **Información supletorios**
-<div class="box2">
+
 
 
 ```{r, echo=FALSE, out.width="70%", fig.align = "center"}
  # knitr::include_graphics("img/supletorio1.png")
 ```
 
-</div>
+
 
 <br/><br/>
 

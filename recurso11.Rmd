@@ -525,18 +525,27 @@ Si $n/N > 0.05$, debemos realizar corrección por población finita.
 
 Existen dos tipos de muestreo:
 
-+ **Muestreo   probabilísticos
-    + Muestreo aleatorio simple 
-    + Muestreo aleatorio estratificado
-    + Muestreo aleatorio por conglomerados
-		+ Muestreo sistemático
-		+ Muestreo compuestos
 
-+ **Muestreo no probabilísticos**
-    + Muestreo por conveniencia
-		+ Muestreo por juicio
-		+ Muestreo por cuotas
-		+  Muestreo bola de nieve
+<br/>
+
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+ knitr::include_graphics("img/muestreos.png")
+```
+
+
+
+<!-- + **Muestreo   probabilísticos -->
+<!--     + Muestreo aleatorio simple  -->
+<!--     + Muestreo aleatorio estratificado -->
+<!--     + Muestreo aleatorio por conglomerados -->
+<!-- 		+ Muestreo sistemático -->
+<!-- 		+ Muestreo compuestos -->
+
+<!-- + **Muestreo no probabilísticos** -->
+<!--     + Muestreo por conveniencia -->
+<!-- 		+ Muestreo por juicio -->
+<!-- 		+ Muestreo por cuotas -->
+<!-- 		+  Muestreo bola de nieve -->
 
 <br/><br/>
 

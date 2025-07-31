@@ -6,7 +6,7 @@ body {
   font-family: 'Andika', sans-serif;
   background-color: #f7f7f7;
   color: #333333;
-}
+} 
 
 /* Encabezado */
 header {
@@ -476,6 +476,12 @@ body, p, ul, ol, li {
   font-weight: 400;
   font-size: 18px;  /* o usa 18px si prefieres tamaño fijo */
   line-height: 1.6;
+}
+
+
+mjx-container {
+  font-size: 110%;
+  line-height: 1.4;
 }
         
         
