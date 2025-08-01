@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Andika&family=Shadows+Into+Light&display=swap');
 
-
 /* Estilo general */
 body {
-  font-family: 'Andika', sans-serif;
+ font-family: 'Andika', sans-serif;
   background-color: #f7f7f7;
   color: #333333;
-} 
+}
 
 /* Encabezado */
 header {
@@ -39,7 +38,7 @@ nav a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
-  font-size: 1.8em;
+  font-size: 16px;
 }
 
 nav a:hover {
@@ -156,12 +155,12 @@ a:hover {
 
 /* Cambiar el tipo de letra del sitio web */
 body {
-  font-family: 'Arial', sans-serif; /* Tipo de letra */
+  font-family: 'Andika', sans-serif; /* Tipo de letra */
 }
 
 /* Cambiar el tipo de letra y color de los encabezados */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Arial', sans-serif; /* Tipo de letra */
+   font-family: 'Andika', sans-serif; /* Tipo de letra */
   color: #2c5697; /* Color de los encabezados */
 }
 
@@ -180,31 +179,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Definir una clase para la caja de contenido */
- .box1 {
-        border: 2px solid #8DA9C4; /* Color azul del borde */
-        padding: 15px; /* Espaciado interior */
-        margin: 15px 0; /* Espaciado exterior */
-        border-radius: 5px; /* Esquinas redondeadas opcional */
-        position: relative; /* Necesario para la posición absoluta de la etiqueta */
+        .box1 {
+            border: 2px solid #8DA9C4; /* Color azul del borde */
+            padding: 15px; /* Espaciado interior */
+            margin: 15px 0; /* Espaciado exterior */
+            border-radius: 5px; /* Esquinas redondeadas opcional */
+            position: relative; /* Necesario para la posición absoluta de la etiqueta */
         }
 
-/* Opcional: estilizar el texto dentro de la caja */
-.box1 h2, .box1 p {
-       color: #000000; /* Color del texto */
+        /* Opcional: estilizar el texto dentro de la caja */
+        .box1 h2, .box1 p {
+            color: #000000; /* Color del texto */
         }
 
- /* Estilo para la etiqueta */
- .box1 .label {
-        position: absolute; /* Posiciona la etiqueta dentro de la caja */
-        top: -10px; /* Ajusta la posición vertical de la etiqueta */
-        left: 10px; /* Ajusta la posición horizontal de la etiqueta */
-        background-color: #8DA9C4; /* Color de fondo de la etiqueta */
-        color: #000000; /* Color del texto de la etiqueta */
-        padding: 5px 10px; /* Espaciado interior de la etiqueta */
-        border-radius: 5px; /* Esquinas redondeadas de la etiqueta */
-        font-weight: bold; /* Texto en negrita */
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para la etiqueta */
-        font-size: 18px; /* Tamaño de la fuente aumentado */
+        /* Estilo para la etiqueta */
+        .box1 .label {
+            position: absolute; /* Posiciona la etiqueta dentro de la caja */
+            top: -10px; /* Ajusta la posición vertical de la etiqueta */
+            left: 10px; /* Ajusta la posición horizontal de la etiqueta */
+            background-color: #8DA9C4; /* Color de fondo de la etiqueta */
+            color: #000000; /* Color del texto de la etiqueta */
+            padding: 5px 10px; /* Espaciado interior de la etiqueta */
+            border-radius: 5px; /* Esquinas redondeadas de la etiqueta */
+            font-weight: bold; /* Texto en negrita */
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para la etiqueta */
+            font-size: 1.2em; /* Tamaño de la fuente aumentado */
         }
 
         /* Ajustar el espaciado cuando hay una etiqueta */
@@ -251,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 5px; /* Esquinas redondeadas de la etiqueta */
             font-weight: bold; /* Texto en negrita */
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para la etiqueta */
-            font-size: 18px; /* Tamaño de la fuente aumentado */
+            font-size: 1.2em; /* Tamaño de la fuente aumentado */
         }
 
         /* Ajustar el espaciado cuando hay una etiqueta */
@@ -302,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 5px; /* Esquinas redondeadas de la etiqueta */
             font-weight: bold; /* Texto en negrita */
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para la etiqueta */
-            font-size: 18px; /* Tamaño de la fuente aumentado */
+            font-size: 1.2em; /* Tamaño de la fuente aumentado */
         }
 
         /* Ajustar el espaciado cuando hay una etiqueta */
@@ -339,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
   /* Opcional: estilizar el texto dentro de la caja */
- .box2 h2, .box2 p {
+        .box2 h2, .box2 p {
             color: #000000; /* Color del texto */
         }
 
@@ -354,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 5px; /* Esquinas redondeadas de la etiqueta */
             font-weight: bold; /* Texto en negrita */
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para la etiqueta */
-            font-size: 1.6em; /* Tamaño de la fuente aumentado */
+            font-size: 1.2em; /* Tamaño de la fuente aumentado */
         }
 
         /* Ajustar el espaciado cuando hay una etiqueta */
@@ -403,7 +402,7 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 5px; /* Esquinas redondeadas de la etiqueta */
             font-weight: bold; /* Texto en negrita */
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para la etiqueta */
-            font-size: 1.6em; /* Tamaño de la fuente aumentado */
+            font-size: 1.2em; /* Tamaño de la fuente aumentado */
         }
 
 /* Ajustar el espaciado cuando hay una etiqueta */
@@ -455,33 +454,19 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
-
-/* Fuente y tamaño para párrafos */
-body, p {
-  font-family: 'Andika', sans-serif;
-  font-weight: 400; /* Regular */
-  font-size: 1.4em;  /* Aumenta el tamaño del texto */
-  line-height: 1.6;   /* Mejora la legibilidad */
-}
-
-/* Fuente para títulos en negrilla */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Andika', sans-serif;
-  font-weight: 700; /* Bold */
-}
-        
-/* Fuente y tamaño para cuerpo del texto */
-body, p, ul, ol, li {
-  font-family: 'Andika', sans-serif;
-  font-weight: 400;
-  font-size: 18px;  /* o usa 18px si prefieres tamaño fijo */
-  line-height: 1.6;
-}
+/* Responsivo: Pantallas más pequeñas */
+@media (max-width: 800px) {
+    .box22 {
+        flex: 1
 
 
-mjx-container {
-  font-size: 110%;
-  line-height: 1.4;
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  flex-wrap: wrap;
 }
-        
-        
+
+.column {
+  width: 48%;
+}

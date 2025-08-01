@@ -505,7 +505,12 @@ Este indicador corresponde al inverso de la media aritmética
  
 ### **Problema reconocimiento de grupo**
 
-Spongaos que solo se nos dice que un grupo conformado por 4 personas tiene un promedio de edad de $20$ años. Todos inicialmente suponemos que se trata de cuatro jóvenes que tienen edades cercanas a $20$ años. Pero  puede ocurrir que estemos lejos de acertarlo, pues existen multiples combinaciones de edades que tienen como promedio $20$ años. 
+Supongaos que solo se nos dice que un grupo conformado por 4 personas tiene un promedio de edad de $20$ años. Todos inicialmente suponemos que se trata de cuatro jóvenes que tienen edades cercanas a $20$ años. Pero  puede ocurrir que estemos lejos de acertarlo, pues existen multiples combinaciones de edades que tienen como promedio $20$ años. 
+
+
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+knitr::include_graphics("img/grupos.png")
+```
 
 Por ello es necesario tener más informacion sobre el grupo.
 
@@ -515,8 +520,6 @@ Por ello es necesario tener más informacion sobre el grupo.
 |Edades : 19, 22, 18, 21      |Edades : 39, 38, 2, 1               |
 |Promedio : 20 años           |Promedio : 20 años                  |
 |                             |                                    |
-
-<img src="img/grupos3.png" width="700">
 
 
 Hace falta otro indicador que nos oriente de cual grupo hablamos cuando solo tenemos como información : media = $20$ años. Esta necesidad la suplen los `indicadores de dispersión`.
@@ -753,9 +756,16 @@ d2=density(mtcars$mpg); plot(d2)
 ### **Nivel de ansiedad**
 
 
-|               |                             |
-|:--------------|:----------------------------|    
-| ![](img/ansiedad.png)| Los siguientes datos corresponden al **nivel de ansiedad** de un grupo de estudiantes de la universidad valorada antes de la presentación del primer examen parcial. El investigador a cargo del proyecto utilizó una prueba para medir el nivel de ansiedad que permite puntajes entre 0 y 100. Los valores inferiores a 50 puntos se consideran como nivel bajo . Entre 50 y 80 , nivel medio y superiores a 80 se consideran altos.|
+```{r, echo=FALSE, out.width="20%", fig.align='left'}
+knitr::include_graphics("img/ansiedad.png")
+```
+Imagen tomada de : https://pixabay.com
+
+<br/>
+
+Los siguientes datos corresponden al **nivel de ansiedad** de un grupo de estudiantes de la universidad valorada antes de la presentación del primer examen parcial. El investigador a cargo del proyecto utilizó una prueba para medir el nivel de ansiedad que permite puntajes entre 0 y 100. Los valores inferiores a 50 puntos se consideran como nivel bajo . Entre 50 y 80 , nivel medio y superiores a 80 se consideran altos.
+
+
 Otra variable importante en el análisis corresponde a la **facultad** a la que pertence el estudiante
 1. Facultad de Ingeniería y Ciencias
 2. Facultad de Ciencias Económicas y Administrativas

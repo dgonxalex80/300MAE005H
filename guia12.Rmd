@@ -51,6 +51,8 @@ knitr::include_graphics("img/guia01.png")
 
 ## **Introducción**
 
+<br/>
+
 El **Análisis Descriptivo** permite examinar información contenida en una base de datos, procesarla y mediante la construcción de tablas, indicadores y gráficos y con esto elementos realizar un primer análisis de la información, permitiendo así tener una primera impresión de lo que dicen los datos, con la cual se pueden construir hipótesis que luego podrán ser verificadas.
 
 En este proceso es importante conocer el tipo de variable ( cualitativa o cuantitativa) y su tipo de escala (nominal, ordinal en el caso de las cualitativas o de intervalo, de razón en el caso de las cuantitativas), con fin de seleccionar la manera adecuada de construir tablas que resuman la información e indicadores en cada caso.
@@ -61,11 +63,15 @@ En esta unidad se tratara en primer lugar el resumen de información mediante ta
 
 ## **Objetivos de la unidad**
 
+<br/>
+
 Al finalizar esta unidad el estudiante estará en capacidad de RESUMIR e INTERPRETAR información mediante la construcción de TABLAS DE FRECUENCIA, INDICADORES DESCRIPTIVOS que permitan un correcto análisis de datos.
 
 <br/><br/>
 
 ## **Duración**
+
+<br/>
 
 La presente unidad será desarrollada durante la segunda semana del semestre. Ademas del material suministrado contaran con el acompañamiento del profesor en dos sesiones (lunes, miércoles y jueves) y de manera asincrónica con foro de actividades académicas. Los entregables para esta unidad deberán enviarse a través de la plataforma Brightspace hasta el 10 de agosto.
 
