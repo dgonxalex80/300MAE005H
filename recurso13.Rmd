@@ -248,7 +248,7 @@ par(mfrow=c(1, 1))
 <br/><br/>
 
 
-### Primer paso:  **Instalar y cargar la libreria**
+#### Primer paso:  **Instalar y cargar la libreria**
 
 
 
@@ -271,7 +271,7 @@ library(ggplot2)
 
 </br></br>
 
-### Segundo paso : **Declarar la base de datos y las varibles**
+#### Segundo paso : **Declarar la base de datos y las varibles**
 
 
 ```{r,fig.height=5}
@@ -284,7 +284,7 @@ p
 
 </br></br>
 
-### Cuarto paso : **Crear grafico base** con las diferentes geometrías
+#### Tercer paso : **Crear grafico base** con las diferentes geometrías
 
 
 
@@ -306,7 +306,7 @@ p
 </br></br>
 
 
-### Quinto paso : **Agregar caracteristicas adicionales**
+#### Cuarto paso : **Agregar caracteristicas adicionales**
 
 ```{r,fig.height=5}
 p <- ggplot(mtcars, aes(x = wt, y = mpg, color = cyl)) +
@@ -320,7 +320,7 @@ p
 </br></br>
 
 
-### Paso sexto : **Agregar títilo,  etiquetas a los ejes  leyenda aclararoria**
+#### Sexto paso : **Agregar títilo,  etiquetas a los ejes  leyenda aclararoria**
 
 ```{r, message=FALSE, warning=FALSE,fig.height=5}
 p <- p + labs(title = "Relación entre Peso del Auto y Consumo de Combustible",
@@ -336,7 +336,7 @@ p
 
 </br></br>
 
-### Septimo paso : **Agregar una línea de tendencia**
+#### Septimo paso : **Agregar una línea de tendencia**
 
 ```{r, message=FALSE, warning=FALSE,fig.height=5}
 p <- p + geom_smooth(method = "lm", se = FALSE, linetype = "dashed", color = "black")
@@ -345,7 +345,7 @@ p
 
 </br></br>
 
-### Octavo paso : **Agreagar un tema o fondo**
+#### Octavo paso : **Agreagar un tema o fondo**
 
 ```{r}
 p <- p + theme_minimal(base_size = 14)
@@ -380,6 +380,10 @@ p <- ggplot(mtcars, aes(x = wt, y = mpg, color = cyl)) +
 # Mostrar el gráfico
 p
 ```
+
+#### gráfico completo !!
+
+
 
 </br></br>
 

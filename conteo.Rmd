@@ -52,7 +52,7 @@ Un estudiante tiene dos posibilidades de ir de su casa a la universidad: En tran
 <br/>
 
 
-```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+```{r, echo=FALSE, out.width="30%", fig.align = "center"}
 knitr::include_graphics("img/psuma.png")
 ```
 
@@ -78,7 +78,7 @@ El número de posibles formas como puede fabricar una silla será:  $n_{1} \time
 
 
 
-```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+```{r, echo=FALSE, out.width="30%", fig.align = "center"}
 knitr::include_graphics("img/pmultiplicacion.png")
 ```
 
@@ -94,8 +94,8 @@ Se tiene una urna  que contiene $n$ elementos todos numerables ( se pueden conta
 <br/><br/>
 
 
-```{r, echo=FALSE, out.width="30%", fig.align = "center"}
-knitr::include_graphics("img/urna.png")
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+knitr::include_graphics("img/urna1.png")
 ```
 
 <br/><br/>
