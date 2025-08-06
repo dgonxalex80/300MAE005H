@@ -69,13 +69,13 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 |               | [flexdashboard](https://rstudio.github.io/flexdashboard/index.html)|
 |               | [Rmarkdown](https://rstudio.github.io/cheatsheets/html/rmarkdown.html) |
 |               | [ggplot2](https://rstudio.github.io/cheatsheets/html/data-visualization.html) |
-|Fecha  | 17  de agosto de 2025  |
+|Fecha  | 18  de agosto de 2025  |
 |Hora   | 23:59 hora local |
 
 |Actividad 132   | Descripción                   | 
 |:--------------|:-----------------------------  |
 |Trabajo equipo|  Deben construir un **mapa mental** del *Módulo 1*  que resuma los conceptos más importantes del Modulo 1. El mapa debe ser construido a mano en medio pliego de cartulina. Los equipos podrán estar conformados por 3  estudiantes - Se sugiere que cada estudiante lleve su mapa mental como aporte a la construcción colectiva |
-|Fecha  | **13 de febrero de 2025** - al finalizar la sesión|
+|Fecha  | **14 de febrero de 2025** - al finalizar la sesión|
 |Hora   | al final de la sesión |
 
 <br/><br/>
@@ -96,10 +96,10 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 | Entregable    | Descripción                   | 
 |:--------------|:------------------------------|
 | Actividad131  | Tablero Acompañado de descripción de los resultados |
-| Fecha         | 17 de febrero de 2025             |
+| Fecha         | 18 de febrero de 2025             |
 |Hora límite    | 23:59  hora  local            |
 |Activiada132   | Mapa mental |
-|Fecha          | **agosto 13 de 2025**         |
+|Fecha          | **agosto 14 de 2025**         |
 |Hora límite    | al finalizar la sesión        |
 |               |                               |
 
