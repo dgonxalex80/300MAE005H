@@ -995,7 +995,7 @@ http://brandcolors.net/
 
 <br/> <br/> 
 
-<a href="mi_script.R" download>
+<a href="https://github.com/dgonxalex80/300MAE005H/tree/main/pdf/tablero-01.Rmd" download>
   <button style="background-color:c50; color:white; padding:7px 20px; border:none; border-radius:5px; cursor:pointer;">
     📥 Descargar código R
   </button>
