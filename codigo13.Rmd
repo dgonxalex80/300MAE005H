@@ -995,11 +995,33 @@ http://brandcolors.net/
 
 <br/> <br/> 
 
-<a href="https://raw.githubusercontent.com/dgonxalex80/300MAE005H/main/pdf/tablero-01.Rmd" download>
-  <button style="background-color:c51; color:white; padding:7px 20px; border:none; border-radius:5px; cursor:pointer;">
-    📥 Descargar código Rmd
-  </button>
-</a>
+<html>
+<button id="dl-rmd" style="background:c50;color:#fff;padding:7px 20px;border:0;border-radius:6px;cursor:pointer">
+  📥 Descargar código Rmd
+</button>
+<script>
+document.getElementById('dl-rmd').addEventListener('click', async () => {
+  const urlRaw = 'https://raw.githubusercontent.com/dgonxalex80/300MAE005H/main/pdf/tablero-01.Rmd';
+  const resp = await fetch(urlRaw);               // CORS está permitido en raw.githubusercontent.com
+  const blob = await resp.blob();
+  const url  = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'tablero-01.Rmd';                  // nombre de archivo al guardar
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+});
+</script>
+</html>
 
-</a>
+
+
+
+
+
+
+
+
 
