@@ -995,9 +995,11 @@ http://brandcolors.net/
 
 <br/> <br/> 
 
-<a href="https://github.com/dgonxalex80/300MAE005H/tree/main/pdf/tablero-01.Rmd" download>
-  <button style="background-color:c50; color:white; padding:7px 20px; border:none; border-radius:5px; cursor:pointer;">
+<a href="https://raw.githubusercontent.com/dgonxalex80/300MAE005H/main/pdf/tablero-01.Rmd" download>
+  <button style="background-color:c51; color:white; padding:7px 20px; border:none; border-radius:5px; cursor:pointer;">
     📥 Descargar código Rmd
   </button>
+</a>
+
 </a>
 
