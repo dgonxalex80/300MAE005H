@@ -612,10 +612,10 @@ knitr::include_graphics("img/paleta3.png")
 
 </br></br>
 
-### **Normas EEEE**
+### **Normas IEEE**
 
 
-Las normas **EEEE** para la construcción de gráficos son principios fundamentales en la visualización de datos que garantizan claridad, precisión y eficacia en la comunicación. Estas normas son:
+Las normas **IEEE** para la construcción de gráficos son principios fundamentales en la visualización de datos que garantizan claridad, precisión y eficacia en la comunicación. Estas normas son:
 
 </br></br>
 

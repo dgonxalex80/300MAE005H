@@ -14,7 +14,7 @@ output:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,comment = NA)
+
 knitr::opts_chunk$set(echo = TRUE,comment = NA)
 library(ggplot2)
 library(readr)
@@ -27,8 +27,6 @@ casas$mes=rep(1:3, each =18 )
 
 # colores
 source("init.R")
-
-
 paleta4=c(c01,c11,c21,c31)
 ```
 
@@ -238,10 +236,11 @@ boxplot(nf)
 ```
 
 
-```{r}
+```{r, fig.height=3}
 boxplot(nf, main="Nota final matemáticas fundamentales",
         col="#f4d35e",
-        las=1)
+        las=1,
+        horizontal = TRUE)
 abline(h=3, col="#f95738", lwd=2)
 ```
 
@@ -270,10 +269,14 @@ cc=c(20, 10, 20, 20, 20, 20, 20, 20, 20, 30, 20, 20, 20, 10, 30, 20, 20, 30, 20,
      30, 20, 10, 30, 10, 20, 20, 10, 20, 20, 20, 20, 10, 20)
 
 labs=c("Ing. de Sistemas","Ing. Industrial","Ing. Mecánica")
+
+par(oma = c(3, 5, 2, 4) )  # margenes de la imagen
 boxplot((nf~cc),main="Nota final matemáticas fundamentales por carrera", 
-        col=c("#066d8d","#34b5aa","#ecbe14"), names=labs, xlab = "carrera", ylab = "nota")
-abline(h=3, col="#f69312", lwd=2)
-abline(h=4, col="#447270", lwd=2)
+        col=c("#066d8d","#34b5aa","#ecbe14"), names=labs, xlab = "nota", ylab = " ", 
+        horizontal = TRUE,
+        las=1)
+abline(v=3, col="#f69312", lwd=2)
+abline(v=4, col="#447270", lwd=2)
 ```
 
 <br/><br/><br/>
@@ -477,7 +480,7 @@ fig2
 
 ```{r}
 fig3=ggplot(casas, aes(edad)) +
-       geom_histogram(bins = 5,fill="#69b3a2", color="#e9ecef", alpha=0.9)+
+       geom_histogram(bins = 7,fill="#69b3a2", color="#e9ecef", alpha=0.9)+
        theme_minimal() +
        labs(x = "años", y = "frecuencia absoluta") +
        ggtitle("Antigüedad de las casas")
@@ -858,6 +861,8 @@ x=rnorm(100,100,20)
 plot(density(x))
 ```
 
+<br/> <br/> 
+
 ### **margenes de la grafica  c(bottom, left, top, right)**
 
 ```{r}
@@ -866,6 +871,9 @@ par(mar = c(5, 4, 4, 2) + 0.1)
 x=rnorm(100,100,20)
 plot(density(x))
 ```
+
+<br/> <br/> 
+
 
 ###  **margenes de la gráfica**
 
@@ -876,8 +884,10 @@ x=rnorm(100,100,20)
 plot(density(x))
 
 ```
- 
- ### **Matriz de gráficos mfrow = c(2, 2)**
+
+<br/> <br/> 
+
+### **Matriz de gráficos mfrow = c(2, 2)**
 
 ```{r}
 x=rnorm(100,100,20)
@@ -892,6 +902,7 @@ hist(x)
 plot(x,y)
 ```
 
+<br/> <br/> 
 
 ### **margenes exteriores c(bottom, left, top, right)**
 
@@ -905,6 +916,8 @@ hist(x)
 plot(x,y)
 
 ```
+
+<br/> <br/> 
 
 # **Tamaño texto**
 
@@ -921,6 +934,7 @@ plot(density(x),cex.lab=.8,  # tamaño de etiqueta ejes
 https://r-charts.com/es/r-base/margenes/
 
 
+<br/> <br/> <br/> 
 
 # **Flexdashboard**
 
@@ -931,12 +945,15 @@ Iniciaremos cargando el paquete (por una única vez)
 # install.packages("flexdashboard")
 ```
 
+<br/> 
+
 Tambien debemos activarlo, aunque este procedimiento viene en el formato que nos proporciona RStudio 
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 library(flexdashboard)
 ```
 
+<br/> 
 
 Inicialmente utilizamos la plantilla que para este propósito tiene RStudio, entrando por el menú : **File/ New file /  RMarkdown..**
 
@@ -948,6 +965,7 @@ Este procedimiento genera un formato para un tablero que puede ser modificado o 
 
 ![](img/flexdashboard3.png){width=60%}
 
+<br/> 
 
 En este formato podemos distinguir varias partes :
 
@@ -957,6 +975,7 @@ En este formato podemos distinguir varias partes :
 + Bloques de R con el contenido
 
 
+<br/> <br/> 
 
 ## **Uso de color**
 
@@ -964,7 +983,21 @@ https://r-charts.com/colors/
 
 http://brandcolors.net/
 
+<br/> <br/> 
+
 ## **Algunos paquetes**
 
 [Selección de paquetes de Sharpm Machis](https://www.computerworld.com/article/2921176/great-r-packages-for-data-import-wrangling-visualization.html)
+
+<br/> <br/> <br/> 
+
+## **Ejemplo de tablero**
+
+<br/> <br/> 
+
+<a href="mi_script.R" download>
+  <button style="background-color:c50; color:white; padding:7px 20px; border:none; border-radius:5px; cursor:pointer;">
+    📥 Descargar código R
+  </button>
+</a>
 
