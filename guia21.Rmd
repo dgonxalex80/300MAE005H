@@ -62,7 +62,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 |:--------------|:-----------------------------  |
 | Actividad 211 | **Taller211**.  Resuelva las preguntas del siguiente  taller y entregue su solución  en formato **pdf**  en el enlace correspondiente de Brightspace.|
 | En parejas    | Cada integrante debe subir la solución de manera indivudial en la plataforma  Bs  | 
-|Fecha  |  19 de agosto de 2024 |
+|Fecha  |  26 de agosto   |
 |Hora   |  23:59 hora local     |
 |||
 
@@ -84,7 +84,7 @@ El **taller211** de la unidad 2.1 recoge los elementos estudiados y por tanto  t
 | Entregable |  Descripción                    |
 |:--------------|:-----------------------------|
 | Actividad211    | Solucionario taller 211 | 
-| Fecha           | 19 de agosto de 2024 | 
+| Fecha           | 26 de agosto | 
 |Hora límite      | 23:59  hora  local |
  
 <br/><br/><br/><br/>

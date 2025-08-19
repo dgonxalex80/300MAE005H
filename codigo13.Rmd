@@ -995,6 +995,11 @@ http://brandcolors.net/
 
 <br/> <br/> 
 
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/tablero-01.png")
+```
+
 <html>
 <button id="dl-rmd" style="background:c50;color:#fff;padding:7px 20px;border:0;border-radius:6px;cursor:pointer">
   📥 Descargar código Rmd

@@ -54,6 +54,24 @@ navbar:
         - text: "Módulo 2"
           href: Modulo2.html
         - text: "---------"  
+        - text: "Guía 2.1"
+          href: guia21.html  
+        - text: "Recursos 2.1"
+          href: recurso21.html  
+        - text: "Código 2.1"
+          href: codigo21.html
+        - text: "---------" 
+        - text: "Guía 2.2"
+          href: guia22.html  
+        - text: "Recursos 2.2"
+          href: recurso22.html  
+        - text: "Código 2.2"
+          href: codigo22.html  
+        - text: "---------"            
+        - text: "Monitoría 2"
+          href: monitoria2.html                   
+                    
+                
 
     - text: "Módulo 3"
       menu:
