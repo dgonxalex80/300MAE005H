@@ -470,3 +470,46 @@ h1, h2, h3, h4, h5, h6 {
 .column {
   width: 48%;
 }
+
+
+
+/*---------------------------------*/
+
+/* Botón individual Show/Hide que crea R Markdown */
+button.code-folding-btn {
+  font-size: 0 !important;   /* oculta el texto original (Show/Hide) */
+  position: relative;
+}
+
+/* Texto cuando el bloque está oculto (equivalente a Show) */
+button.code-folding-btn::after {
+  content: "Mostrar";
+  font-size: 12px;           /* tamaño visible del texto nuevo */
+}
+
+/* Texto cuando el bloque está expandido (equivalente a Hide) */
+button.code-folding-btn[aria-expanded="true"]::after {
+  content: "Ocultar";
+  font-size: 12px;
+}
+
+/* Botones globales “Show All Code” / “Hide All Code” en la barra superior */
+#rmd-show-all-code,
+#rmd-hide-all-code {
+  font-size: 0 !important;   /* oculta texto original */
+}
+
+#rmd-show-all-code::after {
+  content: "Mostrar todo el código";
+  font-size: 14px;
+}
+
+#rmd-hide-all-code::after {
+  content: "Ocultar todo el código";
+  font-size: 14px;
+}
+
+
+
+
+

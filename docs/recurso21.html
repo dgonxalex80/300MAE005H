@@ -448,39 +448,89 @@ $(document).ready(function () {
 interrogantes:</p>
 <div id="qué-es-la-probabilidad" class="section level4">
 <h4>¿Qué es la probabilidad?</h4>
+<pre class="r"><code># La probabilidad es una medida matemática que cuantifica la posibilidad de ocurrencia de un evento dentro de un espacio de resultados posibles. Se expresa como un número entre 0 y 1, donde 0 representa imposibilidad y 1 certeza.
+
+# Ross, S. (2014). Introduction to Probability Models (11th ed.). Academic Press.</code></pre>
 </div>
 <div id="cuál-es-su-uso.." class="section level4">
 <h4>¿Cuál es su uso…..?</h4>
+<pre class="r"><code># La probabilidad se utiliza para modelar fenómenos aleatorios, tomar decisiones en condiciones de incertidumbre, evaluar riesgos, predecir comportamientos y apoyar en la estadística inferencial. Se aplica en áreas como economía, biología, ingeniería y ciencias sociales.
+
+# Feller, W. (2008). An Introduction to Probability Theory and Its Applications (Vol. 1). Wiley.</code></pre>
 </div>
 <div id="como-se-mide" class="section level4">
 <h4>¿Como se mide……?</h4>
+<pre class="r"><code># La probabilidad se mide dividiendo el número de casos favorables entre el número total de casos posibles (cuando todos los resultados son igualmente probables). En contextos más generales, se mide a través de funciones de probabilidad y distribuciones.
+
+# Grimmett, G., &amp; Stirzaker, D. (2001). Probability and Random Processes (3rd ed.). Oxford University Press.</code></pre>
 </div>
 <div id="que-tipos-de-probabilidad-existen" class="section level4">
 <h4>¿Que tipos de probabilidad existen?</h4>
+<pre class="r"><code># Clásica: basada en el conteo de casos favorables y posibles.
+
+# Frecuentista: definida como el límite de la frecuencia relativa de un evento cuando el número de repeticiones tiende al infinito.
+
+# Subjetiva: depende de la creencia o juicio personal respecto a la ocurrencia de un evento.
+
+# Kolmogorov, A. (1956). Foundations of the Theory of Probability. Chelsea Publishing.</code></pre>
 </div>
 <div id="qué-propiedades-posee." class="section level4">
 <h4>¿Qué propiedades posee….?</h4>
+<pre class="r"><code># No negatividad: P(A) ≥ 0.
+
+# Normalización: P(S) = 1, siendo S el espacio muestral.
+
+# Aditividad: Si A y B son eventos mutuamente excluyentes, entonces P(A ∪ B) = P(A) + P(B).
+
+# Casella, G., &amp; Berger, R. (2002). Statistical Inference (2nd ed.). Duxbury.</code></pre>
 <p><br/><br/></p>
 </div>
 <div id="qué-significado-tienen-las-palabras" class="section level4">
 <h4>¿Qué significado tienen las palabras…</h4>
 <div id="azar---aleatorio" class="section level5">
 <h5>Azar - Aleatorio</h5>
+<pre class="r"><code># Azar: acontecimiento sin causa aparente o previsible.
+
+# Aleatorio: fenómeno que no es determinístico. Es posible se modelado
+
+# Ross, S. (2014). Introduction to Probability Models.</code></pre>
 </div>
 <div id="determinístico---no-deterministico" class="section level5">
 <h5>Determinístico - No deterministico</h5>
+<pre class="r"><code># Determinístico: el resultado está completamente definido por las condiciones iniciales.
+
+# No determinístico: el resultado no puede predecirse con certeza, depende del azar
+
+# Ross, S. (2014). Introduction to Probability Models.</code></pre>
 </div>
 <div id="incertidumbre---probable---improbable" class="section level5">
 <h5>Incertidumbre - Probable - Improbable</h5>
+<pre class="r"><code># Incertidumbre: ausencia de certeza sobre un resultado.
+
+# Probable: evento con posibilidad de ocurrencia.
+
+# Improbable: evento con muy baja posibilidad de ocurrencia.
+
+# Kahneman, D., &amp; Tversky, A. (1979). Prospect Theory: An Analysis of Decision under Risk. Econometrica, 47(2), 263–291.</code></pre>
 </div>
 <div id="cierto---incierto---imposible" class="section level5">
 <h5>Cierto - Incierto - Imposible</h5>
-<p><img src="img/nube.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>Muchos relacionamos el concepto de probabilidad con los dados, pues
-forma parte de su origen y de su desarrollo inicial a través de
-preguntas y situaciones imaginarias y de alguna forma modelables desde
-la matemáticas. Pero este concepto va mucho mas alla como lo veremos en
-esta unidad.</p>
+<pre class="r"><code># Cierto: evento que ocurre con probabilidad 1.
+
+# Incierto: evento con probabilidad entre 0 y 1.
+
+# Imposible: evento que ocurre con probabilidad 0.
+
+# Kolmogorov, A. (1956). Foundations of the Theory of Probability.</code></pre>
+<p><img src="img/probabilidad2.png" width="100%" style="display: block; margin: auto;" /><img src="img/probabilidad.png" width="100%" style="display: block; margin: auto;" />
+Fuente : diario El Pais</p>
+<p><br/></p>
+<p>Aunque a menudo leemos en los diarios el termino
+<strong>PROBABILIDAD</strong>, muchos relacionamos el concepto con los
+dados, pues forma parte de su origen y de su desarrollo inicial a través
+de preguntas y situaciones imaginarias y de alguna forma modelables
+desde la matemáticas. Pero este concepto va mucho mas alla como lo
+veremos en esta unidad.</p>
 <p>La probabilidad es un concepto que se empieza a trabajar en 1654
 cuando, caballero de Mered solicita a B. Pascal le ayude a resolver un
 problema relacionado con juegos de mesa. En particular este caballero
@@ -490,7 +540,7 @@ ellos perdía dinero en las apuestas que se presentaban en el juego.</p>
 <p>Encomendado Pascal de esta tarea empieza a compartir su trabajo con
 Fermat, matemático y de la correspondencia de estos dos brillantes
 matemáticos nace los principios y fundamentos de lo que hoy conocemos
-como probabilidad</p>
+como probabilidad.</p>
 <p><br/><br/></p>
 <p><img src="img/pascal.png" width="80%" style="display: block; margin: auto;" /></p>
 <p>Con el fin de motivar la construcción de los conceptos principales

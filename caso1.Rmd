@@ -117,4 +117,26 @@ DT::datatable(
 </center>
 
 
+<br/><br/>
+
+<center>
+
+</center>
+
+
+### [**Tablero**](https://rpubs.com/dgonzalez80/caso1)
+
+<br/>
+
+
+### [**Flexdashboard**](https://rstudio.github.io/flexdashboard/articles/using.html) 
+k
+
+
+<br/>
+
+
+### [**icons**](https://ionic.io/ionicons/v2/cheatsheet.html)
+
+
 

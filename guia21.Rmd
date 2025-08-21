@@ -83,7 +83,7 @@ El **taller211** de la unidad 2.1 recoge los elementos estudiados y por tanto  t
 
 | Entregable |  Descripción                    |
 |:--------------|:-----------------------------|
-| Actividad211    | Solucionario taller 211 | 
+| Actividad211    | Solucionario taller 211.  | 
 | Fecha           | 26 de agosto | 
 |Hora límite      | 23:59  hora  local |
  

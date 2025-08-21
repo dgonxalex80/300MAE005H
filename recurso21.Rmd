@@ -41,22 +41,107 @@ source("init.R")
 Antes de empezar con el tema reflexionemos sobre los siguientes interrogantes:
 
 #### ¿Qué es la probabilidad?
+```{r}
+# La probabilidad es una medida matemática que cuantifica la posibilidad de ocurrencia de un evento dentro de un espacio de resultados posibles. Se expresa como un número entre 0 y 1, donde 0 representa imposibilidad y 1 certeza.
+
+# Ross, S. (2014). Introduction to Probability Models (11th ed.). Academic Press.
+```
+
 #### ¿Cuál es su uso.....?
+
+```{r}
+# La probabilidad se utiliza para modelar fenómenos aleatorios, tomar decisiones en condiciones de incertidumbre, evaluar riesgos, predecir comportamientos y apoyar en la estadística inferencial. Se aplica en áreas como economía, biología, ingeniería y ciencias sociales.
+
+# Feller, W. (2008). An Introduction to Probability Theory and Its Applications (Vol. 1). Wiley.
+```
+
 #### ¿Como se mide......?
+
+```{r}
+# La probabilidad se mide dividiendo el número de casos favorables entre el número total de casos posibles (cuando todos los resultados son igualmente probables). En contextos más generales, se mide a través de funciones de probabilidad y distribuciones.
+
+# Grimmett, G., & Stirzaker, D. (2001). Probability and Random Processes (3rd ed.). Oxford University Press.
+```
+
+
 #### ¿Que tipos de probabilidad existen?
+```{r}
+# Clásica: basada en el conteo de casos favorables y posibles.
+
+# Frecuentista: definida como el límite de la frecuencia relativa de un evento cuando el número de repeticiones tiende al infinito.
+
+# Subjetiva: depende de la creencia o juicio personal respecto a la ocurrencia de un evento.
+
+# Kolmogorov, A. (1956). Foundations of the Theory of Probability. Chelsea Publishing.
+
+```
+
+
 #### ¿Qué propiedades posee....?
+```{r}
+# No negatividad: P(A) ≥ 0.
+
+# Normalización: P(S) = 1, siendo S el espacio muestral.
+
+# Aditividad: Si A y B son eventos mutuamente excluyentes, entonces P(A ∪ B) = P(A) + P(B).
+
+# Casella, G., & Berger, R. (2002). Statistical Inference (2nd ed.). Duxbury.
+```
 
 <br/><br/>
 
 #### ¿Qué significado tienen las palabras...
 
 ##### Azar - Aleatorio
-##### Determinístico - No deterministico
-##### Incertidumbre - Probable - Improbable
-##### Cierto - Incierto - Imposible
+```{r}
+# Azar: acontecimiento sin causa aparente o previsible.
 
-```{r, echo=FALSE, out.width="80%", fig.align = "center"}
-knitr::include_graphics("img/nube.png")
+# Aleatorio: fenómeno que no es determinístico. Es posible se modelado
+
+# Ross, S. (2014). Introduction to Probability Models.
+```
+
+
+
+##### Determinístico - No deterministico
+```{r}
+# Determinístico: el resultado está completamente definido por las condiciones iniciales.
+
+# No determinístico: el resultado no puede predecirse con certeza, depende del azar
+
+# Ross, S. (2014). Introduction to Probability Models.
+```
+
+
+##### Incertidumbre - Probable - Improbable
+```{r}
+# Incertidumbre: ausencia de certeza sobre un resultado.
+
+# Probable: evento con posibilidad de ocurrencia.
+
+# Improbable: evento con muy baja posibilidad de ocurrencia.
+
+# Kahneman, D., & Tversky, A. (1979). Prospect Theory: An Analysis of Decision under Risk. Econometrica, 47(2), 263–291.
+```
+
+
+
+
+
+##### Cierto - Incierto - Imposible
+```{r}
+# Cierto: evento que ocurre con probabilidad 1.
+
+# Incierto: evento con probabilidad entre 0 y 1.
+
+# Imposible: evento que ocurre con probabilidad 0.
+
+# Kolmogorov, A. (1956). Foundations of the Theory of Probability.
+```
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/probabilidad2.png")
+knitr::include_graphics("img/probabilidad.png")
 #```{r, echo=FALSE, warning=FALSE, message=FALSE,  fig.height=8, fig.width=8}
 # library("tm")
 # library("SnowballC")
@@ -110,14 +195,17 @@ knitr::include_graphics("img/nube.png")
 #   wordcloud2(data = t, size = 0.2, shape = "circle")
 
 ```
+Fuente : diario El Pais
 
+<br/>
 
-
-Muchos relacionamos el concepto de probabilidad con los dados, pues forma parte de su origen y de su desarrollo inicial a través de preguntas y situaciones imaginarias y de alguna forma modelables desde la matemáticas. Pero este concepto va mucho mas alla como lo veremos en esta unidad.
+Aunque a menudo leemos en los diarios el termino **PROBABILIDAD**, muchos relacionamos el concepto con los dados, pues forma parte de su origen y de su desarrollo inicial a través de preguntas y situaciones imaginarias y de alguna forma modelables desde la matemáticas. Pero este concepto va mucho mas alla como lo veremos en esta unidad.
 
 La probabilidad es un concepto que se empieza a trabajar en 1654 cuando, caballero de Mered solicita a B. Pascal le ayude a resolver un problema relacionado con juegos de mesa. En particular este caballero manifestaba que las Matemáticas presentaban un vacio, pues sus cálculos no coincidían con lo que pasaba en la realidad y como consecuencia de ellos perdía dinero en las apuestas que se presentaban en el juego. 
 
-Encomendado Pascal de esta tarea empieza a compartir su trabajo con Fermat, matemático y de la correspondencia de estos dos brillantes matemáticos nace los principios y fundamentos de  lo que hoy conocemos como probabilidad
+Encomendado Pascal de esta tarea empieza a compartir su trabajo con Fermat, matemático y de la correspondencia de estos dos brillantes matemáticos nace los principios y fundamentos de  lo que hoy conocemos como probabilidad.
+
+
 
 <br/><br/>
 
