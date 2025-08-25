@@ -20,7 +20,7 @@ library(summarytools)
 library(devtools)
 # install_github("lchiffon/wordcloud2")
 library(wordcloud)
-
+library(knitr)
 source("init.R")
 
 ```
@@ -503,9 +503,85 @@ knitr::include_graphics("img/diagrama2_25.png")
 <br/><br/>
 
 
+<div class="box1 with-label">
+<div class="label">Ejemplo 1</div>
+
+En un estudio se observa la relación entre plantas que presentan floración ($A$) y aquellas que están en un hábitat húmedo ($B$).
+
+$A$ : La planta florece
+
+$B$ : La planta está en hábitat húmedo
+
+```{r  message=FALSE}
+library(knitr)
+library(kableExtra)
+
+biologia <- matrix(
+  c(0.35, 0.25, 0.60,
+    0.15, 0.25, 0.40,
+    0.50, 0.50, 1.00),
+  nrow = 3, byrow = TRUE
+)
+
+colnames(biologia) <- c("A", "A'", "Total")
+rownames(biologia) <- c("B", "B'", "Total")
+
+kable(biologia, digits = 2,caption = " ") %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "condensed"), position = "center") %>%
+  column_spec(1, width = "6em") %>%   # Ajusta ancho de la primera columna
+  column_spec(2, width = "6em") %>%   # Ajusta ancho de la columna A
+  column_spec(3, width = "6em") %>%   # Ajusta ancho de la columna A'
+  column_spec(4, width = "7em")       # Ajusta ancho de la columna Total
+
+```
+
+</div>
+
+<br/><br/>
+
+<div class="box1 with-label">
+<div class="label">Ejemplo 2</div>
 
 
+En una universidad se estudia la relación entre estudiantes que aprueban un curso de **Programación Avanzada (A)** y aquellos que entregan a tiempo el **proyecto final (B)**.
+
+- \( A \): El estudiante aprueba el curso  
+- \( B \): El estudiante entrega el proyecto a tiempo  
+
+```{r  message=FALSE}
+library(knitr)
+library(dplyr)
+
+sistemas <- matrix(
+  c(0.40, 0.15, 0.55,
+    0.20, 0.25, 0.45,
+    0.60, 0.40, 1.00),
+  nrow = 3, byrow = TRUE
+)
+
+colnames(sistemas) <- c("A", "A'", "Total")
+rownames(sistemas) <- c("B", "B'", "Total")
+
+kable(sistemas, digits = 2,caption = " ") %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "condensed"), position = "center") %>%
+  column_spec(1, width = "6em") %>%   # Ajusta ancho de la primera columna
+  column_spec(2, width = "6em") %>%   # Ajusta ancho de la columna A
+  column_spec(3, width = "6em") %>%   # Ajusta ancho de la columna A'
+  column_spec(4, width = "7em")       # Ajusta ancho de la columna Total
+
+```
+
+</div>
 
 
+<br/><br/>
+
+<div class="box2 with-label">
+<div class="label">Reto</div>
+
+Para cada uno de los ejemplos anteriores escriba los eventos **marginales** y los eventos **conjuntos** con su respectivos valores de probabilidad.
+
+
+</div>
 
 

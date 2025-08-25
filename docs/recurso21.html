@@ -34,6 +34,8 @@
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
 
@@ -920,6 +922,207 @@ probabilidad de que ocurra A y NO ocurra B</p></li>
 probabilidad de que NO ocurra A ni B</p></li>
 </ul>
 <p><br/><br/></p>
+<div class="box1 with-label">
+<div class="label">
+Ejemplo 1
+</div>
+<p>En un estudio se observa la relación entre plantas que presentan
+floración (<span class="math inline">\(A\)</span>) y aquellas que están
+en un hábitat húmedo (<span class="math inline">\(B\)</span>).</p>
+<p><span class="math inline">\(A\)</span> : La planta florece</p>
+<p><span class="math inline">\(B\)</span> : La planta está en hábitat
+húmedo</p>
+<pre class="r"><code>library(knitr)
+library(kableExtra)
+
+biologia &lt;- matrix(
+  c(0.35, 0.25, 0.60,
+    0.15, 0.25, 0.40,
+    0.50, 0.50, 1.00),
+  nrow = 3, byrow = TRUE
+)
+
+colnames(biologia) &lt;- c(&quot;A&quot;, &quot;A&#39;&quot;, &quot;Total&quot;)
+rownames(biologia) &lt;- c(&quot;B&quot;, &quot;B&#39;&quot;, &quot;Total&quot;)
+
+kable(biologia, digits = 2,caption = &quot; &quot;) %&gt;%
+  kable_styling(full_width = FALSE, bootstrap_options = c(&quot;striped&quot;, &quot;condensed&quot;), position = &quot;center&quot;) %&gt;%
+  column_spec(1, width = &quot;6em&quot;) %&gt;%   # Ajusta ancho de la primera columna
+  column_spec(2, width = &quot;6em&quot;) %&gt;%   # Ajusta ancho de la columna A
+  column_spec(3, width = &quot;6em&quot;) %&gt;%   # Ajusta ancho de la columna A&#39;
+  column_spec(4, width = &quot;7em&quot;)       # Ajusta ancho de la columna Total</code></pre>
+<table class="table table-striped table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+A
+</th>
+<th style="text-align:right;">
+A’
+</th>
+<th style="text-align:right;">
+Total
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 6em; ">
+B
+</td>
+<td style="text-align:right;width: 6em; ">
+0.35
+</td>
+<td style="text-align:right;width: 6em; ">
+0.25
+</td>
+<td style="text-align:right;width: 7em; ">
+0.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+B’
+</td>
+<td style="text-align:right;width: 6em; ">
+0.15
+</td>
+<td style="text-align:right;width: 6em; ">
+0.25
+</td>
+<td style="text-align:right;width: 7em; ">
+0.4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+Total
+</td>
+<td style="text-align:right;width: 6em; ">
+0.50
+</td>
+<td style="text-align:right;width: 6em; ">
+0.50
+</td>
+<td style="text-align:right;width: 7em; ">
+1.0
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br/><br/></p>
+<div class="box1 with-label">
+<div class="label">
+Ejemplo 2
+</div>
+<p>En una universidad se estudia la relación entre estudiantes que
+aprueban un curso de <strong>Programación Avanzada (A)</strong> y
+aquellos que entregan a tiempo el <strong>proyecto final
+(B)</strong>.</p>
+<ul>
+<li><span class="math inline">\(A\)</span>: El estudiante aprueba el
+curso<br />
+</li>
+<li><span class="math inline">\(B\)</span>: El estudiante entrega el
+proyecto a tiempo</li>
+</ul>
+<pre class="r"><code>library(knitr)
+library(dplyr)
+
+sistemas &lt;- matrix(
+  c(0.40, 0.15, 0.55,
+    0.20, 0.25, 0.45,
+    0.60, 0.40, 1.00),
+  nrow = 3, byrow = TRUE
+)
+
+colnames(sistemas) &lt;- c(&quot;A&quot;, &quot;A&#39;&quot;, &quot;Total&quot;)
+rownames(sistemas) &lt;- c(&quot;B&quot;, &quot;B&#39;&quot;, &quot;Total&quot;)
+
+kable(sistemas, digits = 2,caption = &quot; &quot;) %&gt;%
+  kable_styling(full_width = FALSE, bootstrap_options = c(&quot;striped&quot;, &quot;condensed&quot;), position = &quot;center&quot;) %&gt;%
+  column_spec(1, width = &quot;6em&quot;) %&gt;%   # Ajusta ancho de la primera columna
+  column_spec(2, width = &quot;6em&quot;) %&gt;%   # Ajusta ancho de la columna A
+  column_spec(3, width = &quot;6em&quot;) %&gt;%   # Ajusta ancho de la columna A&#39;
+  column_spec(4, width = &quot;7em&quot;)       # Ajusta ancho de la columna Total</code></pre>
+<table class="table table-striped table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+A
+</th>
+<th style="text-align:right;">
+A’
+</th>
+<th style="text-align:right;">
+Total
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 6em; ">
+B
+</td>
+<td style="text-align:right;width: 6em; ">
+0.4
+</td>
+<td style="text-align:right;width: 6em; ">
+0.15
+</td>
+<td style="text-align:right;width: 7em; ">
+0.55
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+B’
+</td>
+<td style="text-align:right;width: 6em; ">
+0.2
+</td>
+<td style="text-align:right;width: 6em; ">
+0.25
+</td>
+<td style="text-align:right;width: 7em; ">
+0.45
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+Total
+</td>
+<td style="text-align:right;width: 6em; ">
+0.6
+</td>
+<td style="text-align:right;width: 6em; ">
+0.40
+</td>
+<td style="text-align:right;width: 7em; ">
+1.00
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br/><br/></p>
+<div class="box2 with-label">
+<div class="label">
+Reto
+</div>
+<p>Para cada uno de los ejemplos anteriores escriba los eventos
+<strong>marginales</strong> y los eventos <strong>conjuntos</strong> con
+su respectivos valores de probabilidad.</p>
+</div>
 </div>
 </div>
 </div>

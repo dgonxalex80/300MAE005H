@@ -448,6 +448,200 @@ $(document).ready(function () {
 
 <p><img src="img/codigo02.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br/><br/><br/></p>
+<div id="experimentos-aleatorios" class="section level1">
+<h1><strong>Experimentos aleatorios</strong></h1>
+<p><br/><br/></p>
+<p>Como se menciona en la Guía 2.1, un <strong>Experimento
+aleatorio</strong> se puede definir como una acción que podemos repetir
+en iguales condiciones muchas veces y cuyo resultado no conocemos
+anticipadamente</p>
+<p><br/><br/></p>
+<div class="box1 with-label">
+<div class="label">
+Ejemplo 1
+</div>
+<p>Un ejemplo de ello es cuando estamos jugando parques y un jugador
+lanza dos dados, el resultado solo es posible de observar después de
+haber realizado la acción de lanzarlos.</p>
+<p>Al conjunto de todos los posibles valores que puede tomar el
+experimento aleatorio se le denomina <strong>Espacio muestral</strong>,
+que se denota por la letra mayuscula <strong>S</strong>.</p>
+</div>
+<p></br></br></p>
+<center>
+<img src="img/dados.gif" />
+</center>
+<p><br/></br></p>
+<p>Para este ejemplo :</p>
+<p><span class="math display">\[S=\{ 2,3,4,5,6,7,8,9,10,11,12
+\}\]</span> </br></br><br/></p>
+<div id="lanzamiento-de-un-dados" class="section level2">
+<h2><strong>Lanzamiento de un dados</strong></h2>
+<p></br></p>
+<p>Para simular el lanzamiento de un dado utilizaremos la función
+<code>sample(x, size, replace = FALSE, prob = NULL)</code>, con
+parámetros: <code>x</code> : valores del espacio muestral;
+<code>size</code> : tamaño de la muestra y <code>replace</code> : para
+determinar si la selección se realiza con remplazo o sin remplazo.</p>
+<p><code>sample(1:6,200, replace = TRUE)</code>, da un resultado una
+muestra de 200 valores enteros entre 1 y 6, con repetición.</p>
+<pre class="r"><code>n=200
+x=sample(1:6,n, replace = TRUE)
+td1=prop.table(table(x))
+barplot(td1, las=1)</code></pre>
+<p><img src="codigo21_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p></br></br><br/></p>
+</div>
+<div id="lanzamiento-de-dos-dados" class="section level2">
+<h2><strong>Lanzamiento de dos dados</strong></h2>
+<p>En este caso utilizamos la función <code>sample()</code> dos veces y
+se obtienen dos vectores que representan los resultados del dado1 y del
+dado2 respectivamente. Con estos resultados se construye una
+<code>data.frame()</code> de dos columnas por n filas. En ella cada fila
+de dos componentes conforma una muestra con dos valores.</p>
+<p>Para obtener la suma de los valores de los dos dados, utilizamos la
+función <code>apply(X, MARGIN, FUN, ..., simplify = TRUE)</code>
+indicando con <code>MARGIN=1</code> que la operación (siguiente
+parámetro) se realizará por filas. Por último en el parámetro
+<code>FUN</code> se asigna la función a realizar. En resumen :
+<code>suma=apply(dados, 1, sum)</code></p>
+<p></br></p>
+<pre class="r"><code>n=20000000
+d1=sample(1:6,n, replace = TRUE)
+d2=sample(1:6,n, replace = TRUE)
+dados=data.frame(d1,d2)
+suma=apply(dados, 1, sum)
+barplot(table(suma), las=1,cex.axis=0.7)</code></pre>
+<p><img src="codigo21_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>data.frame(prop.table(table(suma)))</code></pre>
+<pre><code>   suma       Freq
+1     2 0.02777585
+2     3 0.05557895
+3     4 0.08338395
+4     5 0.11110115
+5     6 0.13890640
+6     7 0.16667970
+7     8 0.13894065
+8     9 0.11109410
+9    10 0.08322200
+10   11 0.05553835
+11   12 0.02777890</code></pre>
+<p></br></p>
+<p>Procedimiento alternativo</p>
+<pre class="r"><code>t=sapply(1:200, function(x){sum(sample(1:6,2,rep=T))})
+barplot(table(t), las=1, cex.axis=0.7)</code></pre>
+<p><img src="codigo21_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p></br></br><br/></p>
+</div>
+<div id="urna" class="section level2">
+<h2><strong>Urna</strong></h2>
+<p>Para simular la extracción de bolas de una urna, se utilizan las
+funciones <code>sample()</code> y <code>rep()</code> mostradas en el
+siguiente ejemplo :</p>
+<ul>
+<li>Simulación de urna con: 3 bolas Blancas, 5 Rojas y 4 Azules
+<ul>
+<li>1 representa las bolas blancas</li>
+<li>2 representa las bolas rojas</li>
+<li>3 representa las bolas azules</li>
+</ul></li>
+</ul>
+<pre class="r"><code>sample(c(1,2,3),2,rep=T,prob=c(3,5,4))</code></pre>
+<pre><code>[1] 2 2</code></pre>
+<p>La misma simulación con palabras</p>
+<pre class="r"><code>sample(c(&quot;Blanca&quot;,&quot;Roja&quot;,&quot;Azul&quot;),2,rep=T,prob=c(3,5,4))</code></pre>
+<pre><code>[1] &quot;Roja&quot;   &quot;Blanca&quot;</code></pre>
+<p></br></br><br/></p>
+</div>
+</div>
+<div id="tablas-de-contingencia" class="section level1">
+<h1><strong>Tablas de contingencia</strong></h1>
+<p>Las tablas de contingencia o tablas cruzadas se basan en las tablas
+de frecuencia para dos variables cualitativas o cuantitativas con pocos
+valores. En ellas se representan probabilidades conjuntas, marginales y
+condicionales</p>
+<p>Inicialmente construimos una tabla con los valores de las frecuencias
+relativas conjuntas</p>
+<p></br></p>
+<pre class="r"><code>x=c(20,60,100,30,140,50)
+    m=matrix(x,ncol=2)
+    rownames(m)=c(&quot;Adminitrativo&quot;,&quot;Operativo&quot;,&quot;Vendedor&quot;)
+    colnames(m)=c(&quot;Mujer&quot;,&quot;Hombre&quot;)
+    m</code></pre>
+<pre><code>              Mujer Hombre
+Adminitrativo    20     30
+Operativo        60    140
+Vendedor        100     50</code></pre>
+<p>En este caso se adicionan las frecuencias relativas marginales</p>
+<pre class="r"><code>addmargins(m)</code></pre>
+<pre><code>              Mujer Hombre Sum
+Adminitrativo    20     30  50
+Operativo        60    140 200
+Vendedor        100     50 150
+Sum             180    220 400</code></pre>
+<p>Para convertirlas en probabilidades utilizamos la función
+<code>prop.table()</code></p>
+<pre class="r"><code>prop.table(m)</code></pre>
+<pre><code>              Mujer Hombre
+Adminitrativo  0.05  0.075
+Operativo      0.15  0.350
+Vendedor       0.25  0.125</code></pre>
+<p>Esta función también se utiliza para calcular las probabilidades
+condicionales por filas</p>
+<pre class="r"><code>prop.table(m,1)</code></pre>
+<pre><code>                  Mujer    Hombre
+Adminitrativo 0.4000000 0.6000000
+Operativo     0.3000000 0.7000000
+Vendedor      0.6666667 0.3333333</code></pre>
+<p>o las probabilidades condicionales por columnas</p>
+<pre class="r"><code>prop.table(m,2)</code></pre>
+<pre><code>                  Mujer    Hombre
+Adminitrativo 0.1111111 0.1363636
+Operativo     0.3333333 0.6363636
+Vendedor      0.5555556 0.2272727</code></pre>
+<p><br/><br/></p>
+<div class="box1 with-label">
+<div class="label">
+Ejemplo 1
+</div>
+<p><br/><br/></p>
+<div id="ubicación-por-estado-contagiados-de-covid-en-colombia"
+class="section level3">
+<h3>Ubicación por estado contagiados de Covid en Colombia</h3>
+<pre class="r"><code># Colombia= readRDS(&quot;data/Colombia.RDS&quot;)
+t21=table(Colombia23$ubicacion, Colombia23$estado)
+(t22=addmargins(t21))</code></pre>
+<pre><code>              
+               FALLECIDO GRAVE LEVE MODERADO  N/A  Sum
+  CASA                 0     0 9162        0    0 9162
+  FALLECIDO           69     0    0        0    0   69
+  HOSPITAL             0     0    0      331    0  331
+  HOSPITAL UCI         0    33    0        0    0   33
+  N/A                  0     0    0        0   41   41
+  Sum                 69    33 9162      331   41 9636</code></pre>
+<p><br/></p>
+<p>La tabla de frecuencias la convertimos en tabla de probabilidades</p>
+<pre class="r"><code>t23=prop.table(t21)
+round(t23, 4)</code></pre>
+<pre><code>              
+               FALLECIDO  GRAVE   LEVE MODERADO    N/A
+  CASA            0.0000 0.0000 0.9508   0.0000 0.0000
+  FALLECIDO       0.0072 0.0000 0.0000   0.0000 0.0000
+  HOSPITAL        0.0000 0.0000 0.0000   0.0344 0.0000
+  HOSPITAL UCI    0.0000 0.0034 0.0000   0.0000 0.0000
+  N/A             0.0000 0.0000 0.0000   0.0000 0.0043</code></pre>
+</div>
+</div>
+<p><br/><br/></p>
+<div class="box3 with-label">
+<div class="label">
+Nota
+</div>
+<p>En el módulo 3 se presentan otro tipo de simulaciones partiendo del
+supuesto de un modelo de probabilidad y del conocimiento de las
+probabilidades de algunos eventos</p>
+</div>
+</div>
 
 
 
